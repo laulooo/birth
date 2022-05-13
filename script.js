@@ -13,7 +13,6 @@ let i = 0;
 
 buttNext.addEventListener("click", () => {
     content2.style.display = "block";
-    content2.classList.add("typewrite");
     setTimeout(typeWrite, 1500);
 });
 document.addEventListener("click", (e) => {

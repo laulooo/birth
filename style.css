@@ -2,17 +2,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: handlee;
+    font-weight: bold;
     --OBlack: rgba(0, 0, 0, 0.55);
+    overflow: hidden;
 }
 body {
     width: 100vw;
     height: 100vh;
-    background-image: url(foto/bgSakura.jpg);
+    background-image: url(foto/riverside.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+/* LOAD */
+.load {
+    z-index: 9;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity 1s;
+    overflow: hidden !important;
+}
+.textLoad1,
+.textLoad2 {
+    color: white;
+    margin-block: 5px;
+}
+.switchImg {
+    margin-top: 10px;
+    display: none;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
 
 /* content 1 */
@@ -22,30 +52,21 @@ body {
     /* padding: 19px; */
     margin-top: 35vw;
 }
-h1 {
-    width: 90%;
-    background-color: var(--OBlack);
-    padding: 9px;
-    color: white;
-    border: 1px solid white;
-    border-radius: 9px;
-    margin: 20px auto;
-}
+
 .banner {
     position: absolute;
     top: -48px;
     width: 100%;
+    z-index: 8;
 }
-/* .container {
-    border-radius: 9px;
-    width: fit-content;
-    background-color: var(--OBlack);
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
+.content1 .text {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    background-color: white;
+    border-radius: 0 0 19px 19px;
+    color: black;
+}
 .foto1,
 .cake,
 .nextContent {
@@ -56,11 +77,14 @@ h1 {
     width: 80%;
     max-width: 339px;
     min-width: 219px;
-    border-radius: 19px;
+    border-radius: 19px 19px 0 0;
     box-shadow: 0 7px 8px #0000007a;
 }
+
 .content1 .cake {
-    width: 200px;
+    width: 80%;
+    max-width: 500px;
+    margin: 10px auto;
 }
 
 /* content 2 UTAMA */
@@ -87,8 +111,8 @@ h1 {
     max-width: 800px;
     min-width: 360px;
     height: 480px;
-    margin: 0 auto;
-    margin-top: 60px;
+    margin-inline: auto;
+    margin-top: 25vh;
     background: #fafafa;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -166,10 +190,7 @@ h1 {
         right: -19px;
     }
 }
-.content2 .wa {
-    text-align: center;
-    display: none;
-}
+
 button {
     background-image: linear-gradient(to top left, #ff009d, #ff004c);
     padding: 7px 20px;
@@ -186,4 +207,9 @@ button {
     to {
         transform: translateY(8px);
     }
+}
+
+@font-face {
+    font-family: handlee;
+    src: url(font/Handlee-Regular.ttf);
 }
