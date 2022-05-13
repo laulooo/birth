@@ -5,7 +5,6 @@
     font-family: handlee;
     font-weight: bold;
     --OBlack: rgba(0, 0, 0, 0.55);
-    overflow: hidden;
 }
 body {
     width: 100vw;
@@ -63,9 +62,13 @@ body {
     text-align: center;
     margin: 0 auto;
     width: 80%;
+    max-width: 339px;
+    font-size: 139%;
     background-color: white;
     border-radius: 0 0 19px 19px;
     color: black;
+    box-shadow: 0 7px 8px #0000007a;
+    padding: 9px 5px;
 }
 .foto1,
 .cake,
