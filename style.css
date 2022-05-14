@@ -4,18 +4,20 @@
     box-sizing: border-box;
     font-family: handlee;
     font-weight: bold;
-    --OBlack: rgba(0, 0, 0, 0.55);
-}
-body {
-    width: 100vw;
-    height: 100vh;
-    background-image: url(foto/riverside.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+html {
+    background: url(foto/riverside.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 /* LOAD */
 .load {
     z-index: 9;
@@ -45,18 +47,32 @@ body {
 }
 
 /* content 1 */
-.content1 {
+#world {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.confetti {
     width: 100%;
     height: 100%;
-    /* padding: 19px; */
-    margin-top: 35vw;
+    position: absolute;
+    top: 0;
+}
+.content1 {
+    width: 100%;
+    z-index: 5;
+    position: relative;
+    top: 0;
+    padding-top: 150px;
+    padding-bottom: 30px;
 }
 
 .banner {
     position: absolute;
-    top: -48px;
+    top: -58px;
     width: 100%;
     z-index: 8;
+    animation: sidetoside 1s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55) alternate;
 }
 .content1 .text {
     text-align: center;
@@ -71,17 +87,20 @@ body {
     padding: 9px 5px;
 }
 .foto1,
-.cake,
-.nextContent {
+.cake {
     display: block;
     margin: 0 auto;
 }
+.wrap {
+    animation: goyang 1s infinite cubic-bezier(0.4, 0, 1, 1) alternate;
+}
 .foto1 {
     width: 80%;
+
     max-width: 339px;
     min-width: 219px;
     border-radius: 19px 19px 0 0;
-    box-shadow: 0 7px 8px #0000007a;
+    box-shadow: 0 0px 8px #0000007a;
 }
 
 .content1 .cake {
@@ -89,11 +108,23 @@ body {
     max-width: 500px;
     margin: 10px auto;
 }
+button {
+    background-image: linear-gradient(to top left, #ff009d, #ff004c);
+    padding: 7px 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    border: 2px solid white;
+    animation: bounceButton 0.5s ease infinite alternate;
+    display: block;
+}
 
 /* content 2 UTAMA */
 .content2 {
     position: fixed;
-    z-index: 3;
+    z-index: 99;
     top: 0;
     height: 100%;
     width: 100%;
@@ -115,7 +146,7 @@ body {
     min-width: 360px;
     height: 480px;
     margin-inline: auto;
-    margin-top: 25vh;
+    margin-top: 19vh;
     background: #fafafa;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -194,21 +225,25 @@ body {
     }
 }
 
-button {
-    background-image: linear-gradient(to top left, #ff009d, #ff004c);
-    padding: 7px 20px;
-    margin: 50px auto;
-    border-radius: 10px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: white;
-    border: 2px solid white;
-    animation: bounceButton 0.5s ease infinite alternate;
-}
-
 @keyframes bounceButton {
     to {
         transform: translateY(8px);
+    }
+}
+@keyframes sidetoside {
+    to {
+        transform: rotate(-5deg);
+    }
+}
+@keyframes goyang {
+    0% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: rotate(-5deg);
     }
 }
 

@@ -7,7 +7,7 @@ const message = `~ untuk: BAKSO
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste iusto neque quod modi ipsum quos ab, incidunt facere dolor dolores!Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste iusto neque quod modi ipsum quos ab, incidunt facere dolor
 
-                    ~ Dari: David`;
+                                    ~ Dari: David`;
 let i = 0;
 // ================
 
@@ -19,7 +19,6 @@ document.addEventListener("click", (e) => {
     if (e.target == content2) {
         content2.style.display = "none";
     }
-    console.log(e.target);
 });
 
 function typeWrite() {

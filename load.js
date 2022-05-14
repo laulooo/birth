@@ -2,6 +2,8 @@ const load = document.querySelector(".load");
 const text1 = document.querySelector(".textLoad1");
 const text2 = document.querySelector(".textLoad2");
 const switchImg = document.querySelector(".switchImg");
+const confetti = document.querySelector(".confetti");
+const canvasConfetti = document.querySelector("#world");
 
 const textLoad = `Ish... Mati lampu`;
 const textLoad2 = "Nyalain lampunya !";
@@ -13,6 +15,7 @@ document.addEventListener("click", (e) => {
         load.style.opacity = "0";
         setTimeout(() => {
             load.style.display = "none";
+            confetti.play();
         }, 1000);
     }
     console.log(e.target.classList);
