@@ -9,15 +9,16 @@
 html,
 body {
     width: 100%;
-    overflow-x: hidden;
     height: 100%;
+    overflow-x: hidden;
 }
-html {
-    background: url(foto/riverside.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+.bg {
+    background-image: url(foto/riverside.png);
     background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
 }
 /* LOAD */
 .load {
@@ -52,11 +53,14 @@ html {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 2;
+    pointer-events: none;
 }
 .confetti {
     width: 100%;
     height: 100%;
     position: absolute;
+    z-index: 3;
     top: 0;
 }
 .content1 {
@@ -72,7 +76,7 @@ html {
     position: absolute;
     top: -58px;
     width: 100%;
-    z-index: 8;
+    z-index: 3;
     animation: sidetoside 1s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55) alternate;
 }
 .content1 .text {
@@ -83,7 +87,7 @@ html {
     font-size: 139%;
     background-color: white;
     border-radius: 0 0 19px 19px;
-    color: black;
+    color: #1b96d0;
     box-shadow: 0 7px 8px #0000007a;
     padding: 9px 5px;
 }
@@ -97,7 +101,6 @@ html {
 }
 .foto1 {
     width: 80%;
-
     max-width: 339px;
     min-width: 219px;
     border-radius: 19px 19px 0 0;
@@ -110,7 +113,7 @@ html {
     margin: 10px auto;
 }
 button {
-    background-image: linear-gradient(to top left, #ff009d, #ff004c);
+    background-image: linear-gradient(to top left, #ff009c, #ff94b4);
     padding: 7px 20px;
     margin: 0 auto;
     border-radius: 10px;
@@ -120,6 +123,8 @@ button {
     border: 2px solid white;
     animation: bounceButton 0.5s ease infinite alternate;
     display: block;
+    z-index: 3;
+    position: relative;
 }
 
 /* content 2 UTAMA */
