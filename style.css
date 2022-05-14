@@ -16,8 +16,9 @@ body {
     background-image: url(foto/riverside.png);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
 }
 /* LOAD */
@@ -47,7 +48,10 @@ body {
     opacity: 0;
     animation: fadeIn 2s forwards;
 }
-
+/* main */
+.main {
+    position: relative;
+}
 /* content 1 */
 #world {
     position: fixed;
