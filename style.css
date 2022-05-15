@@ -13,11 +13,8 @@ body {
     overflow-x: hidden;
 }
 .bg {
-    background-image: url(foto/riverside.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     width: 100%;
+    object-fit: cover;
     height: 100vh;
     position: fixed;
     z-index: -1;
