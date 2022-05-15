@@ -15,7 +15,7 @@ body {
 .bg {
     width: 100%;
     object-fit: cover;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     z-index: -1;
 }
