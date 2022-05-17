@@ -4,6 +4,7 @@ const text2 = document.querySelector(".textLoad2");
 const switchImg = document.querySelector(".switchImg");
 const confetti = document.querySelector(".confetti");
 const canvasConfetti = document.querySelector("#world");
+const audio = new Audio("Backsound.mp3");
 
 const textLoad = `Ish... Mati lampu`;
 const textLoad2 = "Nyalain lampunya !";
@@ -13,8 +14,10 @@ setTimeout(typeLoad, 1000);
 document.addEventListener("click", (e) => {
     if (e.target.classList.contains("switchImg")) {
         load.style.opacity = "0";
+        audio.play();
         setTimeout(() => {
             load.style.display = "none";
+
             confetti.play();
         }, 1000);
     }
