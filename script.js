@@ -3,11 +3,11 @@ const content2 = document.querySelector(".content2");
 const paper = document.querySelector(".paper");
 // TYPE WRITE PROPERTY
 const textArea = document.querySelector(".pesan");
-const message = `~ untuk: BAKSO
+const message = `~ untuk: Nury Rachma Dhiani ☺️
 
-Halo... Selamat ulang tahun ya HOHOHOHO. Sehat sehat terus, semoga di tahun ini semua keinginan mu tercapai ammin.... 
+Halo... Selamat ulang tahun ndan !!!. Sehat sehat terus ya.., semoga di tahun ini semua keinginan mu tercapai ammin...., Oiya makasih ya udah sering ngajak obrol aku akhir² ini 🤓 
 
-                                    ~ Dari: David`;
+                                    ~ Dari: galak 😎`;
 let i = 0;
 // ================
 
