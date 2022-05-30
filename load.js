@@ -1,3 +1,11 @@
+// ONLOAD
+const onloads = document.querySelector(".onload");
+
+window.addEventListener("DOMContentLoaded", () => {
+    onloads.style.display = "none";
+});
+
+// END ONLOAD
 const load = document.querySelector(".load");
 const text1 = document.querySelector(".textLoad1");
 const text2 = document.querySelector(".textLoad2");

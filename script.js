@@ -5,7 +5,7 @@ const paper = document.querySelector(".paper");
 const textArea = document.querySelector(".pesan");
 const message = `~ untuk: BAKSO
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste iusto neque quod modi ipsum quos ab, incidunt facere dolor dolores!Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste iusto neque quod modi ipsum quos ab, incidunt facere dolor
+Halo... Selamat ulang tahun ya HOHOHOHO. Sehat sehat terus, semoga di tahun ini semua keinginan mu tercapai ammin.... 
 
                                     ~ Dari: David`;
 let i = 0;
