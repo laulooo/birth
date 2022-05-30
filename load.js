@@ -1,9 +1,9 @@
 // ONLOAD
 const onloads = document.querySelector(".onload");
 
-window.addEventListener("DOMContentLoaded", () => {
-    onloads.style.display = "none";
-});
+window.onload = function(){
+        onloads.style.display = "none";
+    }
 
 // END ONLOAD
 const load = document.querySelector(".load");
