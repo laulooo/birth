@@ -12,21 +12,21 @@ body {
     height: 100%;
     overflow-x: hidden;
 }
+html{
+   background: url("foto/riverside.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
 .onload {
     width: 100%;
     height: 100%;
     position: fixed;
     z-index: 99;
     background-color: black;
-}
-.bg {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
-    display: block;
-    background-attachment: scroll;
 }
 /* LOAD */
 .load {
