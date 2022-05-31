@@ -1,9 +1,5 @@
-// ONLOAD
+
 const onloads = document.querySelector(".onload");
-
-window.addEventListener("load", ()=>onloads.style.display = "none");
-
-// END ONLOAD
 const load = document.querySelector(".load");
 const text1 = document.querySelector(".textLoad1");
 const text2 = document.querySelector(".textLoad2");
@@ -16,7 +12,12 @@ const textLoad = `Ish... Mati lampu`;
 const textLoad2 = "Nyalain lampunya !";
 let j = 0;
 let k = 0;
-setTimeout(typeLoad, 1000);
+
+window.addEventListener("load", ()=> {
+   onloads.style.display = "none";
+   setTimeout(typeLoad, 1000);
+});
+
 document.addEventListener("click", (e) => {
     if (e.target.classList.contains("switchImg")) {
         load.style.opacity = "0";
