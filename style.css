@@ -8,25 +8,26 @@
 
 html,
 body {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow-x: hidden;
 }
-
-.bg{
-width: 100vw;
-height: 100vh;
-position: fixed;
-z-index: -1;
-}
-
-
 .onload {
     width: 100%;
     height: 100%;
     position: fixed;
     z-index: 99;
     background-color: black;
+}
+.bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background-image: url(foto/riverside.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 /* LOAD */
 .load {
@@ -72,8 +73,9 @@ z-index: -1;
 }
 .content1 {
     width: 100%;
+    overflow: hidden;
     z-index: 1;
-    position: relative;
+    position: absolute;
     top: 0;
     padding-top: 150px;
     padding-bottom: 30px;
