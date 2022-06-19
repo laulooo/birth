@@ -12,7 +12,7 @@
         resizeWindow,
         xpos;
 
-    NUM_CONFETTI = 190;
+    NUM_CONFETTI = 199;
 
     COLORS = [
         [85, 71, 106],
