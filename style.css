@@ -57,6 +57,58 @@ body {
     animation: fadeIn 2s forwards;
 }
 /* content 1 */
+.bird {
+    position: absolute;
+    top: 50px;
+    z-index: 4;
+}
+#bird {
+    transform: translateX(-100vw);
+    animation: bird 5s linear infinite;
+    overflow: visible;
+}
+#body {
+    animation: body 1s infinite alternate linear;
+}
+#right-wing {
+    animation: right-wing 1s 1s infinite alternate linear;
+    transform-origin: left;
+}
+#left-wing {
+    animation: left-wing 1s infinite alternate linear;
+    transform-origin: center bottom;
+    transform-box: fill-box;
+}
+/* Bird */
+@keyframes bird {
+    from {
+        transform: translateX(-100vw) !important;
+    }
+    to {
+        transform: translateX(100vw);
+    }
+}
+@keyframes body {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(15px);
+    }
+}
+@keyframes right-wing {
+    to {
+        transform: rotateX(171deg);
+    }
+}
+
+@keyframes left-wing {
+    to {
+        transform: rotateX(171deg) rotate(41deg);
+    }
+}
+/* END BIRD */
+
 #world {
     position: fixed;
     top: 0;
