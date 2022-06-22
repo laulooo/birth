@@ -62,10 +62,25 @@ body {
     top: 50px;
     z-index: 4;
 }
-#bird {
+.bird > text {
+    font-size: 40px;
+}
+.bird-instance {
     transform: translateX(-100vw);
     animation: bird 5s linear infinite;
     overflow: visible;
+}
+.bird-instance:nth-child(2),
+.bird-instance:nth-child(3) {
+    position: absolute;
+}
+.bird-instance:nth-child(2) {
+    right: 25px;
+    bottom: -25px;
+}
+.bird-instance:nth-child(3) {
+    left: -80px;
+    top: -29px;
 }
 #body {
     animation: body 1s infinite alternate linear;
@@ -79,6 +94,7 @@ body {
     transform-origin: center bottom;
     transform-box: fill-box;
 }
+
 /* Bird */
 @keyframes bird {
     from {
